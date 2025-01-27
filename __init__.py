@@ -23,7 +23,7 @@ import traceback
 from time import time
 from traceback import format_exc
 
-from pytgcalls import GroupCallFactory
+from pyUltroid.vcbot import GroupCallFactory
 from pytgcalls.exceptions import GroupCallNotFoundError
 from telethon.errors.rpcerrorlist import (
     ParticipantJoinMissingError,
