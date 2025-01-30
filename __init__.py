@@ -152,7 +152,27 @@ from time import time
 from traceback import format_exc
 
 import GroupCallFactory
-from pytgcalls.exceptions import GroupCallNotFoundError
+import GroupCallNotFoundError
+
+class PytgcallsBaseException(Exception):
+    ...
+
+
+class PytgcallsError(PytgcallsBaseException):
+    ...
+
+
+class CallBeforeStartError(PytgcallsBaseException):
+    ...
+
+
+class NotConnectedError(PytgcallsBaseException):
+    ...
+
+
+class GroupCallNotFoundError(PytgcallsBaseException):
+    ...
+
 from telethon.errors.rpcerrorlist import (
     ParticipantJoinMissingError,
     ChatSendMediaForbiddenError,
