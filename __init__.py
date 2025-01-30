@@ -152,7 +152,8 @@ from time import time
 from traceback import format_exc
 
 import GroupCallFactory
-import GroupCallNotFoundError
+import pytgcalls.exceptions
+import exceptions
 
 class PytgcallsBaseException(Exception):
     ...
